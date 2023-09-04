@@ -11,12 +11,12 @@ else
 fi
 wget -q $INFLUXDB_DOWNLOAD_PATH/influxdb2-$INFLUXDB_VERSION-linux-amd64.tar.gz
 tar xvfz influxdb2-$INFLUXDB_VERSION-linux-amd64.tar.gz
-sudo cp influxdb2-$INFLUXDB_VERSION-linux-amd64/influxd /usr/local/bin/
-rm -r influxdb2-$INFLUXDB_VERSION-linux-amd64/
+sudo cp influxdb2_linux_amd64/influxd /usr/local/bin/
+rm -r influxdb2_linux_amd64/
 
 wget -q $INFLUXDB_DOWNLOAD_PATH/influxdb2-client-$INFLUXDB_VERSION-linux-amd64.tar.gz
 tar xvfz influxdb2-client-$INFLUXDB_VERSION-linux-amd64.tar.gz
-sudo cp influxdb2-client-$INFLUXDB_VERSION-linux-amd64/influx /usr/local/bin/
-rm -r influxdb2-client-$INFLUXDB_VERSION-linux-amd64/
+sudo cp influx /usr/local/bin/
+rm *.tar.gz
 
 cd -
